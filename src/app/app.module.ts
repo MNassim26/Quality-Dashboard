@@ -9,6 +9,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InstructionsComponent } from './layout/instructions/instructions.component';
 import { AvantProposComponent } from './layout/avant-propos/avant-propos.component';
+import { ProcessusComponent } from './layout/processus/processus.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AvantProposComponent } from './layout/avant-propos/avant-propos.compone
     FooterComponent,
     LayoutComponent,
     InstructionsComponent,
-    AvantProposComponent
+    AvantProposComponent,
+    ProcessusComponent
   ],
   imports: [
     BrowserModule,
