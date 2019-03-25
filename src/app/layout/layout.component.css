@@ -1,0 +1,50 @@
+.menu{
+  position: relative;
+  top:-8px;
+  width: 35px;
+  height: 5px;
+  background-color: rgb(45, 109, 107);
+  margin: 6px 0;
+}
+.sidenav-container {
+  min-height:90vh;
+  margin-top:20px;
+  margin-right:20px;
+  margin-left:20px;
+}
+
+.sidenav {
+  width:250px;
+  background:#F5F5F5;
+  background: linear-gradient(90deg,  #39B7B3, #F5F5F5);
+}
+
+.sidenav .mat-toolbar {
+  margin-top:-10px;
+  height:250px;
+  background: linear-gradient(90deg,  #39B7B3, #F5F5F5);
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  color:black;
+  background:#F5F5F5;
+
+}
+
+.title{
+  margin-right:20px;
+  margin-left:20px;
+  color:rgb(45, 109, 107);
+  text-align:center;
+}
+
+img{
+  width:99%;
+  height:85%;
+}
+.mat-nav-list{
+  margin-top:-20px;
+}
