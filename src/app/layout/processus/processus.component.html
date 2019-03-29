@@ -3,17 +3,216 @@
     <br>
     <div class="container">
       <div class="row nav-buttons">
-        <button mat-raised-button  class="col-md-2 processus">RH</button>
-        <button mat-raised-button  class="col-md-2 processus">Formations</button>
-        <button mat-raised-button  class="col-md-2 processus">Projets</button>
-        <button mat-raised-button  class="col-md-2 processus">Communication</button>
-        <button mat-raised-button  class="col-md-2 processus">Dév Commercial</button>
+        <button mat-raised-button  class="col-md-2 processus" (click)="visibilityRH()">RH</button>
+        <button mat-raised-button  class="col-md-2 processus" (click)="visibilityFormations()">Formations</button>
+        <button mat-raised-button  class="col-md-2 processus" (click)="visibilityProjets()">Projets</button>
+        <button mat-raised-button  class="col-md-2 processus" (click)="visibilityCommunication()">Communication</button>
+        <button mat-raised-button  class="col-md-2 processus" (click)="visibilityDevCommercial()">Dév Commercial</button>
       </div>
       <br>
       <br>
       <h4 class="info">Clicker sur un processus pour visualiser ces informations</h4>
     <div class="row">
-      <img src="../../../assets/img/file.png" class="content">
+      <img src="../../../assets/img/file.png" class="content-img">
+      <div class="col-md-12">
+        <form>
+          <div class="RH">
+            <h4>Processus : RH</h4>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th style="width:20%;">Sous-Processus</th>
+                  <th style="width:40%;">Nom de l'indicateur ou formule du ratio</th>
+                  <th style="width:40%">Explications</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Qualité du recrutement</td>
+                  <td>Nombre de candidats restants  / nombre de recrutés [sur la période]</td>
+                  <td>Ce ratio permet de calculer l'adéquation des candidats recrutés avec leurs positions</td>
+                </tr>
+                <tr>
+                  <td>Turnover</td>
+                  <td>Nombre total de départs durant l'année / Effectif moyen</td>
+                  <td>Ce ratio permet de calculer le turnover dans votre Junior-Entreprise</td>
+                </tr>
+                <tr>
+                  <td>Pilotage financier des RH</td>
+                  <td>Budget RH/ budget total</td>
+                  <td>Ce ratio permet de calculer les ressources financières mobilisées pour les ressources humaines</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="formations">
+            <h4>Processus : Formations</h4>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th style="width:20%;">Sous-Processus</th>
+                  <th style="width:40%;">Nom de l'indicateur ou formule du ratio</th>
+                  <th style="width:40%">Explications</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Proportionnaité</td>
+                  <td>Nombre des formation réalisées / Effectif total [sur la période]</td>
+                  <td>Ce ratio permet de calculer le nombre moyen de formations réalisées par membre</td>
+                </tr>
+                <tr>
+                  <td>Proportionnalité Soft</td>
+                  <td>Nombre de formations SOFT/ Nombre de formation total [sur la période]</td>
+                  <td>Ce ratio permet d'estimer le pourcentage des formations soft effectuées</td>
+                </tr>
+                <tr>
+                  <td>Proportionnalité Hard</td>
+                  <td>Nombre de formations Hard/ Nombre de formation total [sur la période]</td>
+                  <td>Ce ratio permet d'estimer le pourcentage des formations Hard effectuées</td>
+                </tr>
+                <tr>
+                  <td>Participation à la formation</td>
+                  <td>Nombre des membres formés / Effectif total [sur la période]</td>
+                  <td>Ce ratio permet de calculer la proportion de membres formés dans votre entreprise</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="projets">
+            <h4>Processus : Projets</h4>
+            <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th style="width:20%;">Sous-Processus</th>
+                <th style="width:40%;">Nom de l'indicateur ou formule du ratio</th>
+                <th style="width:40%">Explications</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Projets finalisés</td>
+                <td>Nombre de projets réalisés /Nombre de projets décrochés [sur la période]</td>
+                <td>Ce ratio permet d'avoir une idée sur la faisabilité des projets décrochés  par rapport aux ressources présentes (temps, effectif)</td>
+              </tr>
+              <tr>
+                <td>Allocation ressources</td>
+                <td>Nombre d'effectif travaillant sur le volet projet/effectif total [par période]</td>
+                <td>Ce ratio permet d'estimer l'effectif mobilisé pour chaque projet (implication des membres)</td>
+              </tr>
+              <tr>
+                <td>Satisfaction clients</td>
+                <td>Nombre de clients satisfaits/Nbre total des clients [Sur une période]</td>
+                <td>Ce ratio permet de calculer le degré de satisfaction qui va réfléter la qualité de réalisation des projets</td>
+              </tr>
+            </tbody>
+            </table>
+          </div>
+          <div class="communication">
+            <h4>Processus : Communication</h4>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th style="width:20%;">Sous-Processus</th>
+                  <th style="width:40%;">Nom de l'indicateur ou formule du ratio</th>
+                  <th style="width:40%">Explications</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Évolution du nombre d'abonnés  Facebook</td>
+                  <td>( Nombre d'abonnés(n)-Nombre d'abonnés(n-1) ) / ( Nombre d'abonnés(n-1) )</td>
+                  <td>Ce ratio permet de calculer l'évolution du nombre d'abonnés ( entre le mandat précédent et le mandat actuel )</td>
+                </tr>
+                <tr>
+                  <td>Evolution du nombre d’abonnés INSTAGRAM</td>
+                  <td>( Nombre d'abonnés(n) - Nombre d'abonnés(n-1) ) / ( Nombre d' abonnés(n-1) )</td>
+                  <td>Ce ratio permet de calculer l'évolution du nombre d'abonnés ( entre le mandat précédent et le mandat actuel )</td>
+                </tr>
+                <tr>
+                  <td>Ratio de proportionnalité</td>
+                  <td>( Evolution du nombre d' abonnés INSTAGRAM ) / ( Evolution du nombre d' abonnés FACEBOOK )</td>
+                  <td>Ce ratio permet de savoir la proportionnalité de l’évolution du nombre d’abonnés INSATGRAM par rapport à celui de FACEBOOK.</td>
+                </tr>
+                <tr>
+                  <td>Médias</td>
+                  <td>Nombre de passage radio [ sur une période ]</td>
+                  <td>Cet indicateur permet de calculer le Nombre de passages radios décrochés.</td>
+                </tr>
+                <tr>
+                  <td>Communication offline</td>
+                  <td>Nombre de participations offline de la Junior-Entreprise ( Foire, forum..)</td>
+                  <td>Cet indicateur permet d'estimer l'implication de la Junior-Entreprise dans l'écosystème entrepreunarial</td>
+                </tr>
+                <tr>
+                  <td>Taux de rebonds site web</td>
+                  <td>Nombre de visiteurs ne voyant qu’une page du site/Nombre de visites sur l’ensemble du site</td>
+                  <td>Cet indicateur permet de savoir le pourcentage d’internautes qui sont arrivés sur votre site web</td>
+                </tr>
+                <tr>
+                  <td>Nombre d'article interne diffusés</td>
+                  <td>Nombre d'articles diffusés par la Junior-Entreprise [Sur une période ]</td>
+                  <td>Cet indicateur permet de mesurer la visibilité que la Junior-Entreprise offre </td>
+                </tr>
+                <tr>
+                  <td>Nombre d'article externe diffusés</td>
+                  <td>Nombre d'articles diffusés sur l'une des activités de  la Junior-Entreprise par des canaux externes [Sur une période ]</td>
+                  <td>Cet indicateur permet d'estimer l'imapct de l'image de marque de la Junior-Entreprise par les articles qui ont été écrit sur la Junior-Entreprise</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="devCommercial">
+            <h4>Processus : Dév Commercial</h4>
+            <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th style="width:20%;">Sous-Processus</th>
+                <th style="width:40%;">Nom de l'indicateur ou formule du ratio</th>
+                <th style="width:40%">Explications</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Selectivité des projets</td>
+                <td>Nombre de projets décrochés / Nombre de projets prospectés * [Sur une période]</td>
+                <td>Ce ratio permet d'estimer l'effort fourni dans la prospection des projets</td>
+              </tr>
+              <tr>
+                <td>Recette projets</td>
+                <td>Recette projets / CA [ Sur une période ]</td>
+                <td>Ce ratio permet de calculer la rentabilité des projets</td>
+              </tr>
+              <tr>
+                <td>Rémunération</td>
+                <td>Nombre de projets rémunérés / nbre total de projet [Sur une période]</td>
+                <td>Ce ratio permet de calculer le pourcentage de projets rémunérés </td>
+              </tr>
+              <tr>
+                <td>Partenariats</td>
+                <td>Nombre de partenaires décrochés / Nombre de partenaires prospectés </td>
+                <td>Ce ratio permet d'estimer l'effort fourni dans la prospection des partenaires</td>
+              </tr>
+              <tr>
+                <td>Sponsoring</td>
+                <td>Nombre de sponsors décrochés / Nombre de sponsors prospectés </td>
+                <td>Ce ratio permet d'estimer l'effort fourni dans la prospection des sponsors</td>
+              </tr>
+              <tr>
+                <td>ROI</td>
+                <td>Revenus / Coûts engagés </td>
+                <td>Ce ratio permet de mesurer les retours sur investissement sur une période précise</td>
+              </tr>
+              <tr>
+                <td>Ratio de dépendance</td>
+                <td>Valeur du sponsoring d' un evénement / Coût total estimé de l'evénement</td>
+                <td>Ce ratio permet de mesurer d’une part l’efficacité du processus et d’autre part sa dépendance (Le coût total estimé de l’événement comporte la valeur du sponsoring et la liquidité engagée sur l’événement)</td>
+              </tr>
+            </tbody>
+            </table>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </ng-container>
