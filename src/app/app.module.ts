@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InstructionsComponent } from './layout/instructions/instructions.component';
 import { AvantProposComponent } from './layout/avant-propos/avant-propos.component';
 import { ProcessusComponent } from './layout/processus/processus.component';
+import { SaisieDonneesComponent } from './layout/saisie-donnees/saisie-donnees.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProcessusComponent } from './layout/processus/processus.component';
     LayoutComponent,
     InstructionsComponent,
     AvantProposComponent,
-    ProcessusComponent
+    ProcessusComponent,
+    SaisieDonneesComponent
   ],
   imports: [
     BrowserModule,
