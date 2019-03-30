@@ -8,12 +8,11 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./layout.component.css']
 })
 export class LayoutComponent {
-  NomJE : String ="Codex Junior Entreprise";
+  public NomJE : String ="Codex Junior Entreprise";
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result => result.matches)
-    );
-
+  .pipe(
+    map(result => result.matches)
+  );
   constructor(private breakpointObserver: BreakpointObserver ) {}
   
 

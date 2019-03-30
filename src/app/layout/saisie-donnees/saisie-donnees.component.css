@@ -20,42 +20,62 @@
     
 }
 
-.content-img{
-    margin-left:auto;
-    margin-right:auto;
-    max-width:280px;
-    max-height:300px;
-}
-
-.info{
-    text-align:center;
+.subtitle{
+    color:rgb(64, 160, 157);
 }
 
 .table-header{
-    width:32%;
+    width:40%;
     text-align:center;
     /* background: #6AC9C6; */
     background: #39B7B3;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(115deg, #39B7B3, rgb(255, 255, 255));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(115deg, #39B7B3, rgb(255, 255, 255)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(0deg, #39B7B3, rgb(255, 255, 255));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(180deg, #39B7B3, rgb(255, 255, 255)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-.table-cell-title{
-    font-weight:bold;
-}
 
 .table-middle{
-    width:55%;
+    font-weight:bold;
+    width:50%;
 }
 
+.table-right{
+    width:50%;
+}
 input:hover{
     background: #39B7B3;  /* fallback for old browsers */
     background: -webkit-linear-gradient(115deg, #39B7B3, rgb(255, 255, 255));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(115deg, #39B7B3, rgb(255, 255, 255)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(-90deg, #39B7B3, rgb(255, 255, 255)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 input:focus{
     background: #39B7B3;  /* fallback for old browsers */
     background: -webkit-linear-gradient(115deg, #39B7B3, rgb(255, 255, 255));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(115deg, #39B7B3, rgb(255, 255, 255)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(-90deg, #39B7B3, rgb(255, 255, 255)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.button-save{
+    border:1px solid rgb(10, 57, 71);
+    color:rgb(10, 57, 71);
+    font-weight:bold;
+    background: rgb(75, 221, 216);  /* fallback for old browsers */
+    
+}
+
+.button-save:hover{
+    background:white;
+}
+
+.button-cancel{
+    border:1px solid white;
+    color:white;
+    font-weight:bold;
+    background: rgb(10, 57, 71);  /* fallback for old browsers */
+}
+
+.button-cancel:hover{
+    border:1px solid rgb(10, 57, 71);
+    color:rgb(10, 57, 71);
+    background:white;
 }

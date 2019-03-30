@@ -5,6 +5,7 @@ import { InstructionsComponent } from './layout/instructions/instructions.compon
 import { AvantProposComponent } from './layout/avant-propos/avant-propos.component';
 import { ProcessusComponent } from './layout/processus/processus.component';
 import { SaisieDonneesComponent } from './layout/saisie-donnees/saisie-donnees.component';
+import { ModifierCompteComponent } from './layout/modifier-compte/modifier-compte.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
     {
       path: 'saisie-données',
       component: SaisieDonneesComponent
+    },
+    {
+      path: 'compte',
+      component: ModifierCompteComponent
     },
 
 ];

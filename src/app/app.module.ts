@@ -11,6 +11,7 @@ import { InstructionsComponent } from './layout/instructions/instructions.compon
 import { AvantProposComponent } from './layout/avant-propos/avant-propos.component';
 import { ProcessusComponent } from './layout/processus/processus.component';
 import { SaisieDonneesComponent } from './layout/saisie-donnees/saisie-donnees.component';
+import { ModifierCompteComponent } from './layout/modifier-compte/modifier-compte.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SaisieDonneesComponent } from './layout/saisie-donnees/saisie-donnees.c
     InstructionsComponent,
     AvantProposComponent,
     ProcessusComponent,
-    SaisieDonneesComponent
+    SaisieDonneesComponent,
+    ModifierCompteComponent
   ],
   imports: [
     BrowserModule,
