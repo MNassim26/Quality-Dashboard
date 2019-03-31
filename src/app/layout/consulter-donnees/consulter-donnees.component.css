@@ -1,0 +1,47 @@
+.nav-buttons{
+    max-width:100%;
+    margin-left:4px;
+}
+.processus{
+    margin-left:23px;
+    margin-right:0px;
+    border:1px solid rgb(10, 57, 71);
+    color:rgb(10, 57, 71);
+    font-weight:bold;
+    min-width:17%;
+    background: #39B7B3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(0deg, #39B7B3, rgb(255, 255, 255));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(0deg, #39B7B3, rgb(255, 255, 255)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.processus:hover{
+    background:white;
+    color:rgb(10, 57, 71);
+    
+}
+
+.subtitle{
+    color:rgb(64, 160, 157);
+}
+
+.table-header{
+    width:40%;
+    text-align:center;
+    /* background: #6AC9C6; */
+    background: #39B7B3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(0deg, #39B7B3, rgb(255, 255, 255));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(180deg, #39B7B3, rgb(255, 255, 255)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.table-middle{
+    font-weight:bold;
+    width:50%;
+}
+
+.table-right{
+    width:50%;
+}
+
+

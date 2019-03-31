@@ -6,6 +6,8 @@ import { AvantProposComponent } from './layout/avant-propos/avant-propos.compone
 import { ProcessusComponent } from './layout/processus/processus.component';
 import { SaisieDonneesComponent } from './layout/saisie-donnees/saisie-donnees.component';
 import { ModifierCompteComponent } from './layout/modifier-compte/modifier-compte.component';
+import { ConsulterDonneesComponent } from './layout/consulter-donnees/consulter-donnees.component';
+import { ResponsablesComponent } from './layout/responsables/responsables.component';
 
 const routes: Routes = [
   {
@@ -40,6 +42,14 @@ const routes: Routes = [
     {
       path: 'compte',
       component: ModifierCompteComponent
+    },
+    {
+      path: 'consulter-données',
+      component: ConsulterDonneesComponent
+    },
+    {
+      path: 'responsables',
+      component: ResponsablesComponent
     },
 
 ];

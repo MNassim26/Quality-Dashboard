@@ -3,14 +3,40 @@
       <br>
       <div class="container">
       <br>
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Poste : Responsable {{Role}}</h2>
+      <div class="col-md-10 content">
+          <form>
+            <table class="table">
+                <thead>
+                  <tr class="table-header">
+                    <th colspan="4"><h4>Poste : Responsable {{Role}} </h4></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="4" >
+                        <img src="../../../assets/img/user.png" class="content-img">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th colspan="2" style="text-align:center;color:rgb(64, 160, 157);">Nom de l'utilisateur</th>
+                    <th colspan="2" style="text-align:center;color:rgb(64, 160, 157);">Mot de passe</th>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><input type="text" class="form-control username"></td>
+                    <td colspan="2"><input type="password" class="form-control password"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <button mat-raised-button  class="btn-block button-save" >Enregistrer</button>
+                    </td>
+                    <td colspan="2">
+                      <button mat-raised-button  class="btn-block button-cancel" type="reset" >Annuler</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
         </div>
-        <div class="col-md-8">
-          
-        </div>
-      </div>
     </div>
   </ng-container>
   </app-layout>

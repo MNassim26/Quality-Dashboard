@@ -1,0 +1,47 @@
+<app-layout>
+    <ng-container class="txt">
+      <br>
+      <div class="container">
+      <br>
+      <div class="col-md-10 content">
+          <form>
+            <table class="table">
+                <tbody>
+                  <tr>
+                    <th colspan="2" style="text-align:center;color:rgb(64, 160, 157);">Nom de l'utilisateur :</th>
+                    <td colspan="2"><input type="text" class="form-control username"></td>
+                  </tr>
+                  <tr>
+                    <th colspan="2" style="text-align:center;color:rgb(64, 160, 157);">Mot de passe :</th>
+                    <td colspan="2"><input type="password" class="form-control password"></td>
+                  </tr>
+                  <tr>
+                      <th colspan="2" style="text-align:center;color:rgb(64, 160, 157);">Poste :</th>
+                      <td colspan="2">
+                          <select class="selectpicker">
+                            <option></option>
+                            <option>RH</option>
+                            <option>Formations</option>
+                            <option>RH & Formations</option>
+                            <option>Projets</option>
+                            <option>Communication</option>
+                            <option>Dévloppement Commercial</option>
+                          </select>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <button mat-raised-button  class="btn-block button-save" >Ajouter</button>
+                    </td>
+                    <td colspan="2">
+                      <button mat-raised-button  class="btn-block button-cancel" type="reset" >Annuler</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+        </div>
+    </div>
+  </ng-container>
+  </app-layout>
+  
