@@ -8,15 +8,15 @@
             <table class="table">
                 <tbody>
                   <tr>
-                    <th colspan="2" style="text-align:center;color:rgb(64, 160, 157);">Nom de l'utilisateur :</th>
-                    <td colspan="2"><input type="text" class="form-control username"></td>
+                    <th colspan="2" style="text-align:center;color:rgb(64, 160, 157);">Nom de l'utilisateur</th>
+                    <td colspan="2"><input type="text" class="form-control username" required></td>
                   </tr>
                   <tr>
-                    <th colspan="2" style="text-align:center;color:rgb(64, 160, 157);">Mot de passe :</th>
-                    <td colspan="2"><input type="password" class="form-control password"></td>
+                    <th colspan="2" style="text-align:center;color:rgb(64, 160, 157);">Mot de passe</th>
+                    <td colspan="2"><input type="password" class="form-control password" required></td>
                   </tr>
                   <tr>
-                      <th colspan="2" style="text-align:center;color:rgb(64, 160, 157);">Poste :</th>
+                      <th colspan="2" style="text-align:center;color:rgb(64, 160, 157);">Responsable</th>
                       <td colspan="2">
                           <select class="selectpicker">
                             <option></option>
@@ -31,7 +31,7 @@
                   </tr>
                   <tr>
                     <td colspan="2">
-                      <button mat-raised-button  class="btn-block button-save" >Ajouter</button>
+                      <button mat-raised-button  class="btn-block button-save" >Enregistrer</button>
                     </td>
                     <td colspan="2">
                       <button mat-raised-button  class="btn-block button-cancel" type="reset" >Annuler</button>
@@ -40,6 +40,29 @@
                 </tbody>
               </table>
             </form>
+        </div>
+        <div class="col-md-12 content">
+          <form>
+            <table class="table table-bordered">
+                <thead>
+                    <tr class="table-header">
+                      <th>Nom de l'utilisateur</th>
+                      <th>Mot de passe</th>
+                      <th>Responsable</th>
+                      <th colspan="2">Gérer</th>
+                    </tr>
+                </thead>
+                <tbody style="text-align: center">
+                  <tr>
+                    <td>Codex_projets</td>
+                    <td><input type="password" class="form-control" value="aaaa" disabled></td>
+                    <td>Projets</td>
+                    <td><button mat-raised-button  class="btn-block button-save">Modifier</button></td>
+                    <td><button mat-raised-button  class="btn-block button-cancel">supprimer</button></td>
+                  </tr>
+                </tbody>
+              </table>
+          </form>
         </div>
     </div>
   </ng-container>

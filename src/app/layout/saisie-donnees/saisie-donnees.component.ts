@@ -7,7 +7,7 @@ import * as $ from 'jquery';
   styleUrls: ['./saisie-donnees.component.css']
 })
 export class SaisieDonneesComponent implements OnInit {
-  role : String ="Quartet";
+  role : String ="Formations";
   constructor() { }
 
   ngOnInit() {

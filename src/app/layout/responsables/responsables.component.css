@@ -1,14 +1,10 @@
 .content-img{
-    max-height:50%;
-    max-width:50%;
-    display: block;
+    max-height:70%;
+    max-width:150%;
     margin-left: auto;
     margin-right: auto;
 }   
 
-input{
-    
-}
 
 .username:hover{
     background: #39B7B3;  /* fallback for old browsers */
@@ -31,14 +27,7 @@ input{
 .password:focus{
     background: #39B7B3;  /* fallback for old browsers */
     background: -webkit-linear-gradient(90deg, #39B7B3, rgb(255, 255, 255));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(-90deg, #39B7B3, rgb(255, 255, 255)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.table-header{
-    text-align:center;
-    color:rgb(64, 160, 157);
-    /* background: #6AC9C6; */
-
+    background: linear-gradient(90deg, #39B7B3, rgb(255, 255, 255)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .button-save{
@@ -93,5 +82,13 @@ input{
 .selectpicker::backdrop{
     background: #39B7B3;  /* fallback for old browsers */
     background: -webkit-linear-gradient(90deg, #39B7B3, rgb(255, 255, 255));  /* Chrome 10-25, Safari 5.1-6 */
-     background: linear-gradient(90deg, #39B7B3, rgb(255, 255, 255)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(90deg, #39B7B3, rgb(255, 255, 255)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.table-header{
+    text-align:center;
+    /* background: #6AC9C6; */
+    background: #39B7B3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(0deg, #39B7B3, rgb(255, 255, 255));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(180deg, #39B7B3, rgb(255, 255, 255)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
